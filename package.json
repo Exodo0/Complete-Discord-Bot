@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "axios": "^0.27.2",
+    "discord.js": "^13.8.1",
+    "fs": "^0.0.1-security",
+    "megadb": "^3.4.0",
+    "moment": "^2.29.3",
+    "mongoose": "^6.4.2",
+    "nodemon": "^2.0.18"
+  }
+}
