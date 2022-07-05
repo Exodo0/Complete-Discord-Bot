@@ -54,7 +54,7 @@ const Nuberto = new Discord.MessageEmbed()
 .setTitle("Auto-Responser")
 .setDescription("Robo nombres y fotos")
 .addField("Se copia todo", "👻")
-.setImage('https://cdn.discordapp.com/avatars/789547661799063572/ecff61b66ce0da77c16c8ebcdfd546ca.png?size=4096')
+.setImage('https://cdn.discordapp.com/avatars/789547661799063572/b56672cfc9b4d9a13b16d19001e5fe95.png?size=1024')
 .setTimestamp()
 //embed de nuberto
 const Emiks = new Discord.MessageEmbed()
@@ -134,6 +134,15 @@ const Decuin = new Discord.MessageEmbed()
 .setImage('https://cdn.discordapp.com/attachments/976671106486394911/977383974752092190/unknown.png')
 .setFooter('Ta potente')
 .setTimestamp()
+//embed de decuin
+const Loxe = new Discord.MessageEmbed()
+.setColor("RANDOM")
+.setTitle("Auto-Responser")
+.setDescription("Soy loxe")
+.setImage('https://cdn.discordapp.com/avatars/805528360381317142/9fb8bc08c145269ed4ba2a2acc0bad0d.png?size=1024')
+.addField("Mucho pide", "😠")
+.addField("Ojala lo banen", "🤙")
+.setTimestamp()
 
 client.on('message', message => {
     if (message.content.toLocaleLowerCase() === 'jmc')
@@ -166,4 +175,6 @@ client.on('message', message => {
     message.channel.send({embeds: [RatonLo]});
     else if (message.content.toLocaleLowerCase() === 'decuin')
     message.channel.send({embeds: [Decuin]});
+    else if (message.content.toLocaleLowerCase() === 'loxe')
+    message.channel.send({embeds: [Loxe]});
 });
