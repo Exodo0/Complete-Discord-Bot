@@ -1,17 +1,17 @@
-const Discord = require('discord.js');
+const Discord = require ('discord.js');
 
 module.exports = {
-    name: 'kiss',
-    description: 'Da un beso',
-    aliases: ['kiss'],
+    name: 'kill',
+    description: 'Asesina a un Usuario',
+    aliases: ['kill','Kill'],
 
     run: async (client, message, args) => {
-        
         const list= [
-            "https://c.tenor.com/lYKyQXGYvBkAAAAC/oreshura-kiss.gif",
-            "https://c.tenor.com/hK8IUmweJWAAAAAC/kiss-me-%D0%BB%D1%8E%D0%B1%D0%BB%D1%8E.gif",
-            "https://images-ext-1.discordapp.net/external/qrimyl4P8zBi2kVSo0cZ8yweGOMXf-bJht5zKYvI38s/https/c.tenor.com/Daj-Pn82PagAAAAC/gif-kiss.gif",
-            "https://c.tenor.com/_srv-YHvrjUAAAAC/anime-kiss.gif",
+            "https://c.tenor.com/NbBCakbfZnkAAAAC/die-kill.gif",
+            "https://c.tenor.com/Ze50E1rW44UAAAAd/akudama-drive.gif",
+            "https://c.tenor.com/EWhFGCTfmucAAAAC/akame-ga-kill-akame.gif",
+            "https://c.tenor.com/Hpa1FyBhRusAAAAC/anime-zombies.gif",
+            "https://c.tenor.com/7wLQeXyCPkIAAAAC/akame-ga-kill-anime.gif",
         ];
         
         const rand = list[Math.random() * list.length | 0];
@@ -20,10 +20,10 @@ module.exports = {
         if(!person) return message.channel.send(`:x: ${message.author} Menciona a alguien Primero!`);
 
         const embed = new Discord.MessageEmbed()
-        .setTitle('**Kiss**')
-        .setDescription(`${message.author} **Le dio un beso a: ${person}**`)
+        .setTitle('**Asesinato ☠**')
+        .setDescription(`${message.author} **Acaba de asesinar a: ${person}**`)
         .setImage(rand)
-        .setColor('RANDOM')
+        .setColor('RED')
         .setTimestamp()
         .setThumbnail(message.author.displayAvatarURL({ dynamic: true, format: 'png' }))
         .setFooter(`${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true, format: 'png' }))

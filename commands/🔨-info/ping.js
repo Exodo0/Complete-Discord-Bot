@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: 'ping',
-    aliases: ['p', 'latency'],
+    aliases: ['ping', 'latency'],
     description: 'Revisa el Ping del Bot',
     category: 'info',
 

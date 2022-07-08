@@ -1,12 +1,42 @@
 {
   "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.10.0",
+    "@distube/soundcloud": "^1.1.0",
+    "@distube/spotify": "^1.2.1",
+    "@distube/yt-dlp": "^1.0.2",
     "ascii-table": "^0.0.9",
     "axios": "^0.27.2",
     "discord.js": "^13.8.1",
-    "fs": "^0.0.1-security",
+    "discord.js-pagination": "^1.0.3",
+    "discordjs-button-embed-pagination": "^4.0.3",
+    "distube": "^3.3.4",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.1",
+    "libsodium-wrappers": "^0.7.10",
     "megadb": "^3.4.0",
-    "moment": "^2.29.3",
-    "mongoose": "^6.4.2",
-    "nodemon": "^2.0.18"
-  }
+    "moment": "^2.29.4",
+    "mongoose": "^6.4.3",
+    "parse-ms": "^3.0.0",
+    "quick.db": "^9.0.5",
+    "sodium": "^3.0.2"
+  },
+  "name": "brunch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exodo0/Complete-Discord-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Exodo0/Complete-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/Exodo0/Complete-Discord-Bot#readme",
+  "description": ""
 }
