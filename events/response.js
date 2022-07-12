@@ -142,66 +142,49 @@ const Loxe = new Discord.MessageEmbed()
 .addField("Mucho pide", "😠")
 .addField("Ojala lo banen", "🤙")
 .setTimestamp()
+//embed conducto
+const Conducto = new Discord.MessageEmbed()
+.setColor("RANDOM")
+.setTitle("Auto-Responser")
+.setDescription("Es un Camion <:Bruh:995069248437223545>:")
+.setColor('RANDOM')
+.setImage('https://www.lubricantesenvenezuela.com/wp-content/uploads/2019/06/Todo-sobre-camiones.jpg')
+.setFooter('es inactivo')
+.setTimestamp()
 
 client.on('message', message => {
     if (message.content.toLocaleLowerCase() === 'jmc')
-        message.channel.send({
-            embeds: [JM]
-        });
+        message.channel.send({embeds: [JM]});
     else if (message.content.toLocaleLowerCase() === 'jack')
-        message.channel.send({
-            embeds: [JACK]
-        });
+        message.channel.send({embeds: [JACK]});
     else if (message.content.toLocaleLowerCase() === 'panri')
-        message.channel.send({
-            embeds: [Phantom]
-        });
+        message.channel.send({embeds: [Phantom]});
     else if (message.content.toLocaleLowerCase() === 'pony')
-        message.channel.send({
-            embeds: [Pony]
-        });
+        message.channel.send({embeds: [Pony]});
     else if (message.content.toLocaleLowerCase() === 'kary')
-        message.channel.send({
-            embeds: [Kary]
-        });
+        message.channel.send({embeds: [Kary]});
     else if (message.content.toLocaleLowerCase() === 'nuberto')
-        message.channel.send({
-            embeds: [Nuberto]
-        });
+        message.channel.send({embeds: [Nuberto]});
     else if (message.content.toLocaleLowerCase() === 'emiks')
-        message.channel.send({
-            embeds: [Emiks]
-        });
+        message.channel.send({ embeds: [Emiks] });
     else if (message.content.toLocaleLowerCase() === 'soyunpibe')
-        message.channel.send({
-            embeds: [Pibe]
-        });
+        message.channel.send({embeds: [Pibe]});
     else if (message.content.toLocaleLowerCase() === 'oesp')
-        message.channel.send({
-            embeds: [Danielos]
-        });
+        message.channel.send({embeds: [Danielos]});
     else if (message.content.startsWith("BolaDeMantecaOwO"))
-        message.channel.send({
-            embeds: [Bola]
-        });
+        message.channel.send({embeds: [Bola]});
     else if (message.content.toLocaleLowerCase() === 'joel')
-        message.channel.send({
-            embeds: [Joel]
-        });
+        message.channel.send({embeds: [Joel]});
     else if (message.content.toLocaleLowerCase() === 'joela')
-        message.channel.send({
-            embeds: [Joela]
-        });
+        message.channel.send({embeds: [Joela]});
     else if (message.content.toLocaleLowerCase() === 'joesen')
-        message.channel.send({
-            embeds: [JoeSen]
-        });
+        message.channel.send({embeds: [JoeSen]});
     else if (message.content.toLocaleLowerCase() === 'ratonloco')
-        message.channel.send({
-            embeds: [RatonLo]
-        });
+        message.channel.send({embeds: [RatonLo]});
     else if (message.content.toLocaleLowerCase() === 'decuin')
     message.channel.send({embeds: [Decuin]});
     else if (message.content.toLocaleLowerCase() === 'loxe')
     message.channel.send({embeds: [Loxe]});
+    else if (message.content.toLocaleLowerCase() === 'conductu')
+    message.channel.send({embeds: [Conducto]});
 });

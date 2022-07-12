@@ -8,7 +8,7 @@ module.exports = {
       if (!queue) return message.channel.send(`🛑 >> No hay nada en la lista en este momento.!`)
       try {
         const song = await queue.skip()
-        message.channel.send(`⏩ >> saltada! Reproduciendo ahora ahora:\n${song.name}`)
+        message.channel.send(`⏩ >> Cancion Saltada`)
       } catch (e) {
         message.channel.send({embeds: [new MessageEmbed().setColor("RED")
         .setTitle("Error")

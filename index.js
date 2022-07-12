@@ -5,6 +5,7 @@ const config = require('./config.json');
 const {Client,Collection} = require("discord.js");
 const {readdirSync} = require("fs");
 const {DisTube} = require('distube')
+const Prefix = config.Prefix;
 const {SpotifyPlugin} = require('@distube/spotify')
 const {SoundCloudPlugin} = require('@distube/soundcloud')
 const {YtDlpPlugin} = require('@distube/yt-dlp')
@@ -21,6 +22,7 @@ const client = new Client({
 
 //Bot Handlers
 client.commands = new Collection();
+client.snipes = new Collection();
 client.aliases = new Collection();
 client.categories = readdirSync("./commands/");
 
@@ -28,7 +30,7 @@ client.categories = readdirSync("./commands/");
 client.distube = new DisTube(client, {
   leaveOnStop: true,
   emitNewSongOnly: true,
-  emitAddSongWhenCreatingQueue: false,
+  emitAddSongWhenCreatingQueue: true,
   emitAddListWhenCreatingQueue: false,
   plugins: [new SpotifyPlugin({emitEventsAfterFetching: true}),new SoundCloudPlugin(),new YtDlpPlugin()],
   youtubeDL: false

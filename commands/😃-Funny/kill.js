@@ -12,6 +12,7 @@ module.exports = {
             "https://c.tenor.com/EWhFGCTfmucAAAAC/akame-ga-kill-akame.gif",
             "https://c.tenor.com/Hpa1FyBhRusAAAAC/anime-zombies.gif",
             "https://c.tenor.com/7wLQeXyCPkIAAAAC/akame-ga-kill-anime.gif",
+            "https://c.tenor.com/AMdy8GyVKx4AAAAC/kill-la-kill-machine-gun.gif",
         ];
         
         const rand = list[Math.random() * list.length | 0];
