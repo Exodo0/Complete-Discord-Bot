@@ -22,7 +22,7 @@ module.exports = {
 
         const sniper = new Discord.MessageEmbed()
         .setColor("RANDOM")
-        .setTitle("📝>>Snipe")
+        .setTitle("Snipe Message")
         .setDescription(`📝Mensaje o Foto Eliminada: \n${msg.content}`)
         .setImage(image)
         .addField("Borrado por:", msg.author.tag, true)
